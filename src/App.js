@@ -68,6 +68,7 @@ const App = () => {
             <div className={styles.likesCat}>
               <span className={styles.likes}>{image.likes}</span>
               <button
+                data-testid="count"
                 onClick={() => dispatch(setIncrement(image.id))}
                 className={styles.Cat}
               >
